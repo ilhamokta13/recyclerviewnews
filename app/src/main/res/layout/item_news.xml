@@ -1,0 +1,71 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="4dp"
+        android:backgroundTint="@color/teal_200">
+
+        <TextView
+            android:id="@+id/tv_news_update"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" News Update"
+            android:textColor="@android:color/black"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:backgroundTint="@color/teal_700">
+
+            <ImageView
+                android:id="@+id/imgNews"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="7dp" />
+
+            <TextView
+                android:id="@+id/txtJudul"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="Judul Berita"
+                android:layout_toRightOf="@+id/imgNews"
+                android:textColor="@android:color/black"
+                android:textSize="14sp"
+                android:layout_marginLeft="8dp"/>
+
+            <TextView
+                android:id="@+id/txtTanggal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtJudul"
+                android:layout_marginTop="8dp"
+                android:text="Tanggal Berita"
+                android:layout_toRightOf="@+id/imgNews"
+                android:textColor="@android:color/black"
+                android:textSize="14sp"
+                android:layout_marginLeft="8dp"/>
+
+            <TextView
+                android:id="@+id/txtKategori"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtTanggal"
+                android:layout_marginTop="8dp"
+                android:text="Kategori Berita"
+                android:layout_toRightOf="@+id/imgNews"
+                android:textColor="@android:color/black"
+                android:textSize="14sp"
+                android:layout_marginLeft="8dp"/>
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>
